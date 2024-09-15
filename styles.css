@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Helvetica', Arial, sans-serif; /* using Helvetica */
+    background-color: #f0f0f0;
+    text-transform: lowercase; /* all text islowercase */
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#yesBtn {
+    background-color: orange; /* YES in orange */
+}
+
+#noBtn {
+    background-color: #B19CD9; /* NO in lila */
+    position: absolute;
+}
+
+.button:hover {
+    opacity: 0.8; /* Hover effect */
+}
