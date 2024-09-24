@@ -4,9 +4,72 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Helvetica', Arial, sans-serif; /* using Helvetica */
+    font-family: 'Helvetica', Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+.container {
+    text-align: center;
+    position: relative; /* Container for relative positioning of buttons */
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.button {
+    padding: 12px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    width: 150px; /* Fixed width */
+    background-color: #E8E8E8;
+    color: #333;
+    border: none;
+    border-radius: 0; /* Squared buttons */
+    transition: background-color 0.3s ease;
+    position: absolute; /* Position absolutely within the container */
+}
+
+#yesBtn {
+    background-color: #FFC0CB;
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Adjust for center alignment */
+}
+
+#noBtn {
+    background-color: #A4DDED;
+    /* Initially place the button in the center */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Center the button */
+}
+
+.button:hover {
+    background-color: #E0E0E0;
+    transform: scale(1.03); /* Slight zoom on hover */
+}
+
+.button:active {
+    transform: scale(0.98); /* Slight shrink on click */
+}
+
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Helvetica', Arial, sans-serif;
     background-color: #f0f0f0;
-    text-transform: lowercase; /* all text islowercase */
+    text-transform: lowercase;
 }
 
 .container {
@@ -21,7 +84,7 @@ h1 {
     padding: 10px 20px;
     font-size: 18px;
     margin: 10px;
-    cursor: pointer;
+    cursor: pointer; 
     border: none;
     border-radius: 5px;
     color: white;
@@ -29,14 +92,14 @@ h1 {
 }
 
 #yesBtn {
-    background-color: orange; /* YES in orange */
+    background-color: orange; // YES in orange
 }
 
 #noBtn {
-    background-color: #B19CD9; /* NO in lila */
+    background-color: #B19CD9; // NO in lila
     position: absolute;
 }
 
 .button:hover {
-    opacity: 0.8; /* Hover effect */
-}
+    opacity: 0.8; // Hover FX
+} */
